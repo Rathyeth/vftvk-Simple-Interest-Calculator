@@ -14,7 +14,7 @@ function compute(){
     var year = new Date().getFullYear()+parseInt(years);
     if (principal<=0||principal==""){
         alert("Enter a positive number");
-        principal.focus();
+        document.getElementById("principal").focus();
         return false;
     }
     document.getElementById("result").innerHTML = 
